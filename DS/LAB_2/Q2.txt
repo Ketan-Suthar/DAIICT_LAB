@@ -1,0 +1,21 @@
+// Example program
+#include <iostream>
+#include <string>
+
+int fun(int a,int b)
+{
+    if(a<0)
+        return -fun(-a,b);
+    else if(b<0)
+        return -fun(a,-b);
+    else if(a==0 && b==0)
+        return 0;
+    else
+        return 100 *  fun(a/10, b/10) + 10 * (a % 10) + b % 10;
+}
+int main()
+{
+    int a=7,b=-2;
+    
+    std::cout<<fun(a,b);
+}

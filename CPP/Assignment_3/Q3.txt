@@ -1,0 +1,28 @@
+// Example program
+/*
+3. Write a program that reads an integer and displays the appearances of each digit [0-9] in the number. Eg. if the user enters 455, the program should display that the digit 4 appears once and 5 twice.
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+  unsigned int num;
+    unsigned int arr[10]={0,0,0,0,0,0,0,0,0,0};
+    cin>>num;
+    int temp=num;
+    while(temp>0)
+    {
+        int rem = temp%10;
+        arr[rem]++;
+        temp/=10;
+    }
+    cout<<"in number :: "<<num<<" - appearances  of each digit is :: \n";
+    cout<<"digit - No. of times "<<endl;
+    for(int i=0;i<10;++i)
+        cout<<i<<" - "<<arr[i]<<endl;
+    
+}

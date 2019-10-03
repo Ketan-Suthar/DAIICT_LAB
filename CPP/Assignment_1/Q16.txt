@@ -1,0 +1,27 @@
+/******************************************************************************
+
+16. Write a program to input all sides of a triangle and check whether triangle is valid or not.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int s1,s2,s3;
+   
+    cout<<"Enter sides of triangle :: ";
+    cin>>s1>>s2>>s3;
+
+    // 1 3 5 7 8 10 12
+    if( ((s1+s2)>s3) || ((s1+s3)>s2) || ((s3+s2)>s1))
+        cout<<"Trianlgle sides is not valid";
+   
+    else
+        cout<<"Trianlgle sides is valid ";
+  
+    return 0;
+}

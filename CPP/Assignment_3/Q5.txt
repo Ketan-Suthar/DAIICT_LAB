@@ -1,0 +1,35 @@
+// Example program
+/*
+
+5. Write a program that reads four integers and displays the pair with the largest sum. For example, if the user enters 10, -8, 17, 5, then the program should display 10+17 = 27.
+
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+  int num[4];
+   cout<<"enter 4 numbers :: ";
+    for(int i=0;i<4;++i)
+        cin>>num[i];
+    
+    for(int i=0;i<4;++i)
+        for(int j=i;j<4-i;++j)
+            if(num[j]<num[j+1])
+            {
+                int temp=num[j];
+                num[j]=num[j+1];
+                num[j+1]=temp;
+            }
+        
+    cout<<"4 numbers are :: ";
+    for(int i=0;i<4;++i)
+        cout<<num[i]<<" ";
+    cout<<"\n largest sum is :: "<<num[0]+num[1];
+    
+    
+}

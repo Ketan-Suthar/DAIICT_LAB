@@ -1,0 +1,13 @@
+#include<iostream>
+void main()
+{
+	double i = 12, j = 5, avg;
+	avg = i + j / 2;
+	std::cout << "Avg = " << avg << std::endl;
+}
+
+
+=> To calculate the average 5th line should be
+	avg = (i + j) / 2;
+
+=> Otherwise it will first divide j/2 first and then add result to i whice is = 14.5

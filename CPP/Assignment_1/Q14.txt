@@ -1,0 +1,28 @@
+/******************************************************************************
+
+14. Write a program to input any alphabet and check whether it is vowel or consonant.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int n;
+   
+    char ch;
+    cout<<"Enter character :: ";
+    cin>>ch;
+    n=ch;
+
+    // 65 69 73 79 85 97 101 105 111 117
+    if(n==65 || n==69 || n==73 || n==79 || n==85 || n==97 || n==101 || n==105 || n==111 || n==117)
+        cout<<"char ::  "<<ch<<" is :: VOWEL ";
+    else
+        cout<<"char ::  "<<ch<<" is :: consonant ";
+  
+    return 0;
+}

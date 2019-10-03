@@ -1,0 +1,38 @@
+// Example program
+/*
+
+
+4. An electricity distribution company charges the electricity consumption, as follows:
+(a) Fixed amount of Rs. 100
+(b) For first 50 units, Rs. 1.5/unit
+(c) For next 150 units, Rs. 2.0/unit
+(d) For next 200 units, Rs. 3.0/unit
+(e) For every next unit, Rs. 4.5/unit
+Write a program that reads electricity consumption in number of units and calculates and displays the bill.
+
+
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+  unsigned int consumption;
+   cout<<"enter your electricity consumption(in unit) :: ";
+    cin>>consumption;
+    
+    double total_bill=100;
+    if(consumption>0 && consumption<=50)
+        total_bill+= (consumption*1.5);
+    if(consumption>50 && consumption<=200)
+        total_bill+= (consumption-50)*2;
+    if(consumption>200 && consumption<=400)
+        total_bill+= (consumption-200)*3;
+    if(consumption>400)
+        total_bill+= (consumption*4.5);
+    
+    cout<<"your total bill is :: "<<total_bill;
+}

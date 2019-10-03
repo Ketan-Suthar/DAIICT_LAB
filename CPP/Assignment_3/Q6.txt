@@ -1,0 +1,49 @@
+// Example program
+/*
+
+6. The 13-digit International Standard Book Number (ISBN) is a unique code that identifies a book commmercially. The last digit of this 13 digit ISBN is called 'check digit'. This check digit is used for error detection - i.e to see if the first 12 digits of ISBN number are correct or not.
+To calculate check digit's value, each digit of the first 12 digits is alternatively multiplied, from left to right, by 1 or 3. The products are summed up and divided by 10. The check digit is the remainder of the the division subtracted from 10.
+
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+  long int isbn=9789609319614;
+   //cout<<"enter ISBN number :: ";
+   // cin>>isbn;
+   int pro1=0,pro2=0;
+   bool eo=0;
+   long int temp=isbn/10;
+   
+    while(temp>0)
+    {
+        if(eo==1)
+        {
+            pro1+= (temp%10);
+            eo=0;
+        }
+        else
+        {
+            pro2+= ((temp%10) *3);
+            eo=1;
+        }
+        
+        temp/=10;
+        
+    }
+   int sum=pro1+pro2;
+    cout<<"ISBN No :: "<<isbn;
+    
+    cout<<"\nsum of alternate digits product is :: "<<sum;
+    int check = 10 - (sum%10);
+    cout<<"\n check digit is :: "<<check;
+    if(check == isbn%10)
+        cout<<"\n ISBN number is valid ";
+    else
+        cout<<"\n opps ISBN number is wrong!!";
+}

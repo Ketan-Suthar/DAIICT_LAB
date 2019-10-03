@@ -1,0 +1,57 @@
+/******************************************************************************
+
+16. Write a program to input all sides of a triangle and check whether triangle is valid or not.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+void display()
+{
+    cout<<"1 table mode (currently : "<<table<<")\n";
+    cout<<"2 wifi mode (currently : "<<wifi<<")\n";
+    cout<<"3 mute mode (currently : "<<mute<<")\n";
+    cout<<"4 plane mode (currently : "<<plane<<")\n";
+    cout<<"5 autohide taskbar mode (currently : "<<autohide<<")\n";
+}
+int main()
+{
+    
+    bool tablet,wifi,mute,plane,autohide;
+   int main,sub;
+   do
+   {
+        cout<<"***********MAIN MENU************ ";
+        cout<<"1 Settings\n";
+        cout<<"2 Display Settings\n";
+        cout<<"3 EXIT\N";
+        cout<<"Enter your option";
+        cin>>main;
+        
+        switch(main)
+        {
+            case 1:
+                cout<<"\n\n*********WHAT SETTING YOU WANT TO CHANGE************\n";
+                cout<<"6 EXIT SETTING MENU";
+                display();
+                cout<<"\nEnter your option :: ";
+                cin>>sub;
+                switch(sub)
+                {
+                    case 1:
+                        tablet~=tablet;
+                    case 2:
+                        wifi~=wifi;
+                }
+        }
+        // 1 3 5 7 8 10 12
+        if( ((s1+s2)>s3) || ((s1+s3)>s2) || ((s3+s2)>s1))
+            cout<<"Trianlgle sides is not valid";
+       
+        else
+            cout<<"Trianlgle sides is valid ";
+   }while(main!=3);  
+    return 0;
+}

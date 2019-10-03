@@ -1,0 +1,54 @@
+/******************************************************************************
+
+13. Write a program to input marks of five subjects Data Structures, C++ Programming, DB,
+Mathematics and CS. Assume 100 as max marks. Calculate percentage and grade according to following:
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int ds,dm,db,cpp,cs,total;
+    float per;
+    char grade;
+    cout<<"Enter marks of datastructure :: ";
+    cin>>ds;
+    cout<<"Enter marks of disctretemath :: ";
+    cin>>dm;
+    cout<<"Enter marks of database :: ";
+    cin>>db;
+    cout<<"Enter marks of cpp :: ";
+    cin>>cpp;
+    cout<<"Enter marks of communication :: ";
+    cin>>cs;
+    temp=num;
+    
+    per = (ds+dm+db+cpp+cs)/5;
+    if(per>=90)
+        grade='A';
+    else if(per>=80 && per<90)
+        grade='B';
+    else if(per>=70 && per<80)
+        grade='C';
+    else if(per>=60 && per<70)
+        grade='D';
+    else if(per>=40 && per<60)
+        grade='E';    
+    else(per<40)
+        grade='F';  
+        
+    cout<<"your total marks ::  "<<total<<" and percentag is :: "<<per;
+    cout<<"\n Your Grqade is :: <<grade;
+    return 0;
+}

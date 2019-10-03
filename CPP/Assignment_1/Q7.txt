@@ -1,0 +1,35 @@
+/******************************************************************************
+
+7. Write a program to take input from three students (one by one) - 
+their names and marks obtained (out of maximum of 500).
+Then calculate their percentages and print in the form:
+<student name1> scored x.x%
+<student name2> scored x.x%
+<student name3> scored x.x%
+[Note: i) Avoid using loops as we have not yet covered them. ii) Maximum marks is fixed to 500.]
+
+
+*******************************************************************************/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string s1,s2,s3;
+    int i,x,mark1,mark2,mark3;
+    
+    cout<<"Enter yor name and marks(out of 500) :: ";
+    cin>>s1>>mark1;
+    cout<<"Enter yor name and marks(out of 500) :: ";
+    cin>>s3>>mark2;
+    cout<<"Enter yor name and marks(out of 500) :: ";
+    cin>>s3>>mark3;
+    
+    cout<<"<student "<<s1<<"> scored"<<mark1/5<<"%\n";
+    cout<<"<student "<<s2<<"> scored"<<mark2/5<<"%\n";
+    cout<<"<student "<<s3<<"> scored"<<mark3/5<<"%\n";
+    
+    return 0;
+}

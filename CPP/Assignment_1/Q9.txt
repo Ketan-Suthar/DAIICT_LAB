@@ -1,0 +1,30 @@
+/******************************************************************************
+
+9. Write a program to count number of digits in any number
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int digits=0,num=0,rem=0,x,temp;
+    
+    cout<<"Enter number :: ";
+    cin>>num;
+    temp=num;
+    x:
+    
+    rem=temp/10;
+    digits+=1;
+    temp=temp/10;
+    if(rem!=0)
+        goto x;
+    
+    cout<<"No. of digits in "<<num<<" is :: "<<digits;
+    
+    return 0;
+}

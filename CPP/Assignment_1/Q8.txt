@@ -1,0 +1,33 @@
+/******************************************************************************
+
+8. Write a program to print multiplication table (upto 10) of any number. The output should be like this:
+5 x 1 = 5
+5 x 2 = 10
+..and so on till
+5 x 10 = 50
+
+
+*******************************************************************************/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    
+    int x,num,i=1;
+    
+    cout<<"Enter number to print table :: ";
+    cin>>num;
+    
+    x:
+    
+    cout<<num<<" x"<<" "<<i<<" = "<<i*num<<"\n";
+    ++i;
+    if(i<=10)
+        goto x;
+    
+    
+    return 0;
+}

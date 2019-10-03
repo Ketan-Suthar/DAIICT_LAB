@@ -1,0 +1,29 @@
+/******************************************************************************
+
+15. Write a program to input month number and print number of days in that month.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int n;
+   
+    cout<<"Enter month number :: ";
+    cin>>n;
+
+
+    // 1 3 5 7 8 10 12
+    if(n==1 || n==3 || n==5 || n==7 || n==8 || n==10 || n==12)
+        cout<<"numbers of day in  "<<n<<"th month is :: 31 ";
+    else if(n==2)
+        cout<<"numbers of day in  "<<n<<"th month is :: 28/29 ";
+    else
+        cout<<"numbers of day in  "<<n<<"th month is :: 30 ";
+  
+    return 0;
+}

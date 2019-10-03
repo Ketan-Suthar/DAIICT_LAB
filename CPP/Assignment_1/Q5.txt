@@ -1,0 +1,16 @@
+/******************************************************************************
+
+5. Write a program to print: Aristotle said, “Well begun is half done”.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    cout<<"Aristotle said, \“Well begun is half done.\”";
+    return 0;
+}

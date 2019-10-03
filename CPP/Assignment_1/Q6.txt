@@ -1,0 +1,17 @@
+/******************************************************************************
+
+6. Write a program to print: 
+This is the share for lecture slides: \\10.100.56.21\Lecture\Lavneet Singh\IT603.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    cout<<"This is the share for lecture slides: \\\\10.100.56.21\\Lecture\\Lavneet Singh\\IT603.";
+    return 0;
+}

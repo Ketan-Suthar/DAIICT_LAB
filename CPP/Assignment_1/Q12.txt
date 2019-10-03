@@ -1,0 +1,33 @@
+/******************************************************************************
+
+12. Write a program to enter any number and print its reverse.
+
+
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int rev=0,num=0,x,temp;
+    
+    cout<<"Enter number :: ";
+    cin>>num;
+    temp=num;
+    x:
+    
+    rev=(rev*10)+(temp%10);
+    
+    temp=temp/10;
+    if(temp!=0)
+        goto x;
+    
+    cout<<"Reverse of  "<<num<<" is :: "<<rev;
+    
+    return 0;
+}
+

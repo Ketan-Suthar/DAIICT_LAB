@@ -1,0 +1,32 @@
+/******************************************************************************
+
+
+3.Write a program that declares two intergers, 
+assigns them the values of 20 and 50, and displays result of their division.
+
+*******************************************************************************/
+
+
+#include <iostream>
+
+
+using namespace std;
+
+
+
+int main()
+
+{
+
+    int num1,num2;
+
+    num1=20; num2=50;
+
+    cout<<"num1 / num2 :: "<<num1/num2;
+
+    cout<<"num2 / num1 :: "<<num2/num1;
+
+
+    return 0;
+
+}

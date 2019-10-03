@@ -1,0 +1,67 @@
+// Example program
+/*
+
+8. Write a program that reads an integer and displays the number of bits set (i.e. the number of bits whose value is binary 1).
+Eg. If user enters 30, (binary 00000000 00011110) it should display 4 (because there are four binary 1s i.e. there are four bits 'set' in binary representation of decimal 30).
+
+*/
+#include <iostream>
+#include <string>
+using namespace std;
+bool seats[26][20];
+void show_seats()
+{
+    cout<<"======SEATS========";
+    for(int i=0;i<26;++i)
+    {
+        for(int j=0;j<20;++j)
+        {
+            if(seats[i][j]==0)
+                cout<<"* ";
+            else
+                cout<<"X ";
+        }
+        cout<<endl;
+    }
+            
+}
+int main()
+{
+  
+  int choice;
+    while(1)
+    {
+        char row;
+        int colomn;
+        
+        cout<<"====MAIN MENU====\n";
+        cout<<"1. Buy a ticket.\n";
+        cout<<"2. Ticket Cancellation\n";
+        cout<<"3. Exit the Booking App.\n";
+        cout<<"\n\t enter your choice :: ";
+        cin>>choice;
+        switch(choice)
+        {
+            case 1:
+                show_seats();
+                cout<<"Enter row and colomn of seats for booking :: ";
+                cin>>row>>colomn;
+                seats[(int)(row)][colomn]=1
+            case 2:
+                cout<<"Enter row and colomn of seats for Cancellation :: ";
+                cin>>row>>colomn;
+                seats[(int)(row)][colomn]=0;
+                show_seats();
+            case 3:
+                break;
+        }
+        
+        
+    }
+    }
+    cin>>i;
+    
+    cout<<"number: "<<i<<" :: in binary is: ";
+    convertToBinary(i);
+    cout<<"\n bits set are :: "<<count;
+}

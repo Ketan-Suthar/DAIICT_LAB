@@ -1,0 +1,31 @@
+// Example program
+/*
+
+7. Write a program that reads three integers(i.e. a,b and c) one after the other, not all together. 
+The program should force the user to enter the numbers in decending order (i.e. a > b > c)i.e. the program should exit only after user has entered the numbers that in decending order and the program has displayed the numbers.
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+  int num[3],i=0;
+  cout<<"enter three number in descending order :: ";
+  cin>>num[i];
+    while(1)
+    {
+        int t;
+        cin>>t;
+        if(t>num[i])
+            continue;
+        else
+            num[++i]=t;
+        if(i==2)
+            break;
+        
+    }
+    cout<<"three numbers are :: "<<num[0]<<" "<<num[1]<<" "<<num[2];
+}

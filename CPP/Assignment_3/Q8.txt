@@ -1,0 +1,30 @@
+// Example program
+/*
+
+8. Write a program that reads an integer and displays the number of bits set (i.e. the number of bits whose value is binary 1).
+Eg. If user enters 30, (binary 00000000 00011110) it should display 4 (because there are four binary 1s i.e. there are four bits 'set' in binary representation of decimal 30).
+
+*/
+#include <iostream>
+#include <string>
+using namespace std;
+static int count=0;
+void convertToBinary(unsigned int n)
+{
+    if (n / 2 != 0) {
+        convertToBinary(n / 2);
+    }
+    if(n%2==1)
+        count++;
+    printf("%d", n % 2);
+}
+int main()
+{
+  unsigned int i;
+
+    cin>>i;
+    
+    cout<<"number: "<<i<<" :: in binary is: ";
+    convertToBinary(i);
+    cout<<"\n bits set are :: "<<count;
+}

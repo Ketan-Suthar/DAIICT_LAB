@@ -1,0 +1,20 @@
+// Example program
+#include <iostream>
+#include <string>
+
+int fun(int a, int b)
+{
+    if (a<0)
+        return fun(-a,b);
+ else if (b==1)
+    return a;
+ else
+    return a * fun(a, b-1);
+} 
+
+int main()
+{
+    int a=5,b=3;
+    
+    std::cout<<fun(a,b);
+}

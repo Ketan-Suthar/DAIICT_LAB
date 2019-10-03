@@ -1,0 +1,26 @@
+/******************************************************************************
+
+11. Write a program to print all odd number between 1 to 100.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int x,i=1;
+    
+    cout<<"No. of odd digits between 1 to 100 is :: ";
+    x:
+    
+    if(i%2==1)
+        cout<<i<<" ";
+    ++i;    
+    if(i<=100)
+        goto x;
+
+    return 0;
+}

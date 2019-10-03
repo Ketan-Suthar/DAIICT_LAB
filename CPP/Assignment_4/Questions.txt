@@ -1,0 +1,24 @@
+1. For an array arr, arr[0] is actually syntactic shorthand for *(arr+0). Write a program that prints all elements of an integer array using this alternative notation (i.e. pointer notation).
+
+2. Repeat the first exercise for a two dimetional array twoD[3][4]
+
+3. Repeat the first exercise for a three dimentional array threeD[2][3][4]
+
+4. Write a program that calculates the number of the meaningful values in array using subtraction of pointers. Assume that array is of +ve integers, and 0 is used as flag signalling end of the meaningful elements of array and that the meaningful values are contiguous. Like: An array with 3,4,5,6,0,0,0 should return 4.
+
+5. Write a program to reverse the elements of an integer array using two pointers variables. The values of array elements can't be stored anywhere outside of the array.
+Interestingly, the simple program above could come to you as following user story:
+A rich and famous zar hired you as his top programmer seeing your skills in C programming. He has a digital locker containing details of his business and empire. The key to open this digital locker is a series of numbers, which your program would keep. But the zar has told you in private to write the program such that it keeps the key in the reverse order of numbers given by him. You want to make sure that program does not ever write any of those key number anywhere else in memory other than in the array. How would you write such a program for your highness.
+
+6. Let's try building an order handling software (OHS) for, say, a pizza house. The component that we are interested in deals with only order numbers, not the content of the orders.
+The home screen should show following:
+
+1. Place order
+2. Pending orders
+3. Serve order
+Enter your pick:
+
+When user enters 1: it just adds an order number in the pending order list. It displays the order number added, like: "Your order is placed. Order Number: 1043". It then waits for user to hit enter and gets back to home screen after it is done.
+When user enters 2: Note that this user is 'manager' of the pizza house who wants to check the status. She is not interested in the array of orders to be displayed in front of her. She just wants a count of pending orders. And as quick as possible! If she discovers that your program tries to come up with the count by looping through the array, well, she'll stop the free pizza you are enjoying while writing software for the pizza house.
+When user enters 3: Note that this user is the 'worker' of the pizza house who wants to pick an order out of pending list of orders, so she is definitely interested in seeing the list of pending orders. So the program should display list of pending orders and print in next line: "Pick order:". If the order entered matches one of the list, it deletes that order from the list  pending orders and returns to home screen.
+Note: You can pick whatever numbers you want to represent orders. Like, starting with 100 or 1000 or 2000 etc.
