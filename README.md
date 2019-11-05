@@ -1,1 +1,1 @@
-# This is my personal repo to track college Assignments
+# This is my personal REPO to track my college Assignments
